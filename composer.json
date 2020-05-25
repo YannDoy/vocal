@@ -1,0 +1,21 @@
+{
+    "name": "ydo/vocal",
+    "authors": [
+        {
+            "name": "ydo",
+            "email": "doydy1@bfh.ch"
+        }
+    ],
+    "require": {
+    	"php": "^7.2",
+        "ext-json": "*",
+	  	"php-di/php-di": "^6.1",
+        "slim/psr7": "^1.1",
+        "slim/slim": "^4.5"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "src/"
+    	}
+    }
+}
