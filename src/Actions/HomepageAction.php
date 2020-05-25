@@ -9,17 +9,16 @@ class HomepageAction extends AbstractAction
 {
 	public function __invoke(Request $request, Response $response)
 	{
-		$db = $this->get(Database::class);
+		$db = $this->get('db');
+		$view = $this->get('view');
 
-		$results = $this->get(Database::class)
+		$results = $db
 			->select()
 			->from("word")
 			->execute()
 			->fetchAll();
 
-		var_dump($results);
-
-		$response->getBody()->write("<h1>Welcome !</h1>");
+		$view->render($response, "homepage.php", compact("results"));
 		return $response;
 	}
 }

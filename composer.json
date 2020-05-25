@@ -12,7 +12,8 @@
 	  	"php-di/php-di": "^6.1",
         "slim/psr7": "^1.1",
         "slim/slim": "^4.5",
-        "faapz/pdo": "^2.0"
+        "faapz/pdo": "^2.0",
+        "slim/php-view": "^2.2"
     },
     "autoload": {
     	"psr-4": {
